@@ -1,8 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:ital,wght@0,100;0,300;1,100&family=Roboto+Slab:wght@300&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    background: #F1AE3D;
+}
+
+#logo{
+    padding: 2% 5% 0;
+}
+#logo h1{
+    font-family: 'Roboto Slab', serif;
+    color: #29271B;
+    letter-spacing: 1px;
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+
+#subtitulo{
+    padding-left: 60%;
+    margin-top: -1%;
+}
+#subtitulo h2{
+    font-family: 'Roboto Slab', serif;
+    color: #29271B;
+    font-size: small;
+    font-weight: 400;
+}
+
 header{
-    background-color: orange;
+    background-color: #F5F2E1;
 }
 nav{
-    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    width: 80%;
+    margin: 0 10% 0;
+    position: sticky;
+    top: 0;
+    color: #548593;
+    font-weight: 300;
 }
-nav ul{
+nav a{
+    color: #548593;
+}
+
+main{
+    font-family: 'Quicksand', sans-serif;
+}
+
+#con-bio{
+    padding: 1% 2% 1%;
+    margin: 1%;
+    border: 1px solid #548593;
+    border-radius: 1%;
+    background: rgba(84,133,147, 0.4);
+    text-align: justify;
 }
