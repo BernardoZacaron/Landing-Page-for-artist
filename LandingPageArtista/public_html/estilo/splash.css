@@ -5,6 +5,7 @@ body{
     font-weight: 800;
     background: #F1AE3D;
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 #logo{
@@ -62,7 +63,11 @@ main{
     text-align: justify;
 }
 
-
+.livros{
+    max-width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
 
 #titulo-livro-esquerda{
     grid-area: titulo;
@@ -72,11 +77,17 @@ main{
     align-items: center;
     margin-left: -30px;
 }
+#livro-esquerda h3{
+    -webkit-transform: rotate(90deg);
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline red;
+}
 #texto-livro-esquerda{
     grid-area: texto;
-    margin-left: 30px;
+    margin-left: 15% 
 }
-#titulo-livro-esquerda p{
+#titulo-livro-esquerda{
     grid-area: titulo;
 }
 #livro-esquerda{
@@ -89,20 +100,17 @@ main{
     border: 2px solid red;
     border-radius: 5%;
     position: absolute;
-    left: -85%;
     padding: 3% 0 0;
-    width: 100%;
+    width: 80%;
 }
-#livro-esquerda h3{
-    -webkit-transform: rotate(90deg);
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: underline red;
+#livro-esquerda.desativo{
+    -webkit-transition: left 0.5s ease-in-out;
+    left: -68%;
 }
 
-#livro-esquerda:hover{
+#livro-esquerda.ativo{
     -webkit-transition: left 0.5s ease-in-out;
-    left: -20px;
+    left: -5%;
 }
 
 
@@ -115,13 +123,13 @@ main{
     width: 100px;
     display: flex;
     align-items: center;
-    margin-left: -30px;    
+    margin-left: -30px;   
 }
 #texto-livro-direita{
     grid-area: texto;
-    margin-right: 30px; 
+    margin-right: 12% 
 }
-#titulo-livro-direita p{
+#titulo-livro-direita{
     grid-area: titulo;
 }
 #livro-direita{
@@ -134,18 +142,26 @@ main{
     border: 2px solid red;
     border-radius: 5%;
     position: absolute;
-    right: -300px;
+    right: -85%;
     padding: 3% 0 0;
     width: 100%;
+    overflow-x: hidden;
+    width: 80%;
 }
 #livro-direita h3{
     -webkit-transform: rotate(-90deg);
     font-size: 2em;
     font-weight: bold;
     text-decoration: underline red;
+    margin-left: -30%;
 }
 
-#livro-direita:focus{
-    -webkit-transition: left 0.5s ease-in-out;
-    right: -20px;
+#livro-direita.desativo{
+    -webkit-transition: right 0.5s ease-in-out;
+    right: -68%;
+}
+
+#livro-direita.ativo{
+    -webkit-transition: right 0.5s ease-in-out;
+    right: -5%;
 }
