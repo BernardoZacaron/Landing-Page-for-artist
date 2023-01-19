@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:ital,wght@0,100;0,300;1,100&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Quicksand&family=Raleway:ital,wght@0,100;0,300;1,100&family=Roboto+Slab:wght@300&display=swap');
 
 body{
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     background: #F1AE3D;
     max-width: 100%;
-    overflow: hidden;
 }
 
 #logo{
@@ -65,14 +64,29 @@ main{
 
 
     /*Cards dos livros*/
-.livros{
+#con-intro{
+    width: 60%;
+    text-align: center;
+    margin: 30% 20% 0;
+    position: absolute;
+}
+#con-intro h2{
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    font-size: 3em;
+    color: #29271B;
+}
+
+#livros{
     max-width: 100%;
-    height: fit-content;
-    overflow: hidden;
+    overflow-x: hidden;
+    background: linear-gradient(rgba(241,174,61,1) 0%, rgba(140,79,212,1) 43%, rgba(241,174,61,1) 100%);
+    height: 500px;
+    color: #29271B;
 }
 
 #titulo-livro-esquerda{
-    grid-area: titulo;
+    grid-area: tituloEsq;
     height: 100%;
     display: flex;
     align-items: center;
@@ -81,11 +95,11 @@ main{
     -webkit-transform: rotate(90deg);
     font-size: 2em;
     font-weight: bold;
-    text-decoration: underline red;
 }
 #texto-livro-esquerda{
-    grid-area: texto;
+    grid-area: textoEsq;
     margin-right: -15%;
+    width: 95%;
 }
 #texto-livro-esquerda p{
     text-align: left;
@@ -93,17 +107,26 @@ main{
 #livro-esquerda{
     display: grid;
     grid-template-columns: 10% 65% 1fr;
+    grid-auto-rows: 100%;
+    
     grid-template-areas:
-    '. texto titulo';
+    '. textoEsq tituloEsq';
     
     border: 2px solid red;
     border-radius: 5%;
     position: absolute;
     padding-top: 3%;
     width: 80%;
+    height: 72%;
     
-    background-image: linear-gradient(to right, rgba(150, 12, 17, 0.7), rgba(234, 221, 212,0.7));
+    background-image: linear-gradient(to left, rgba(138, 45, 45,1), rgba(234, 221, 212,1));
 }
+
+#btn-comprar-esquerda{
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
 #livro-esquerda.desativo{
     -webkit-transition: left 0.5s ease-in-out;
     left: -68%;
@@ -117,7 +140,7 @@ main{
 /*-----------------------------------------------*/
 
 #titulo-livro-direita{
-    grid-area: titulo;
+    grid-area: tituloDir;
     height: 100%;
     display: flex;
     align-items: center;
@@ -126,30 +149,38 @@ main{
     -webkit-transform: rotate(-90deg);
     font-size: 2em;
     font-weight: bold;
-    text-decoration: underline red;
+    margin-left: -35%;
 }
 
 #texto-livro-direita{
-    grid-area: texto;
+    grid-area: textoDir;
+    
 }
 #texto-livro-direita p{
     text-align: right;
+    width: 95%;
+    margin-left: -40%;
 }
 
 #livro-direita{
     display: grid;
-    grid-template-columns: 1fr 90%;
+    grid-template-columns: 1fr 85%;
     grid-template-areas:
-    'titulo texto';
-    justify-items: stretch;
-    align-items: stretch;
+    'tituloDir textoDir';
     
     border: 2px solid red;
     border-radius: 5%;
     position: absolute;
     right: -85%;
     padding-top: 3%;
-    width: 80%;
+    padding-right: 15%;
+    width: 82%;
+    height: 72%;
+    
+    background-image: linear-gradient(to right, rgba(66, 184, 61, 1), rgba(255, 255, 255,1));
+}
+
+#btn-comprar-direita{
 }
 
 #livro-direita.desativo{
