@@ -32,6 +32,7 @@ body{
 
 header{
     background-color: #F5F2E1;
+    max-width: 100%;
 }
 nav{
     display: flex;
@@ -55,7 +56,8 @@ main{
 
 #con-bio{
     padding: 1% 2% 1%;
-    margin: 1%;
+    width: 94%;
+    margin: 1% 3% 1%;
     border: 1px solid #548593;
     border-radius: 1%;
     background: rgba(84,133,147, 0.4);
