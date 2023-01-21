@@ -4,6 +4,12 @@ body{
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     background: #F1AE3D;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+main{
+    max-width: 100vw;
+    overflow-x: hidden;
     max-width: 100%;
 }
 
@@ -41,7 +47,7 @@ nav{
     align-content: space-around;
     width: 80%;
     margin: 0 10% 0;
-    position: sticky;
+    position: -webkit-sticky;
     top: 0;
     color: #548593;
     font-weight: 300;
@@ -69,7 +75,7 @@ main{
 #con-intro{
     width: 60%;
     text-align: center;
-    margin: 30% 20% 0;
+    margin: 40% 20% 0;
     position: absolute;
 }
 #con-intro h2{
@@ -83,7 +89,7 @@ main{
     max-width: 100%;
     overflow-x: hidden;
     background: linear-gradient(rgba(241,174,61,1) 0%, rgba(140,79,212,1) 43%, rgba(241,174,61,1) 100%);
-    height: 500px;
+    height: 480px;
     color: #29271B;
 }
 
@@ -193,4 +199,36 @@ main{
 #livro-direita.ativo{
     -webkit-transition: right 0.5s ease-in-out;
     right: -5%;
+}
+
+
+
+#carrossel{
+    width: 90%;
+    margin: 5% 5% 3%; 
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    height: 60px;
+    background-color: #F5F2E1;
+}
+
+#con-footer{
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0 5%;
+}
+#con-footer img{
+    width: 25px;
+    float: left;
+}
+
+#con-footer a{
+    text-decoration: none;
+}
+
+.contato{
+    margin-left: 5%;
 }
