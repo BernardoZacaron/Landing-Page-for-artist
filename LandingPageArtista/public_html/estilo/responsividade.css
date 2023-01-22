@@ -1,94 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Quicksand&family=Raleway:ital,wght@0,100;0,300;1,100&family=Roboto+Slab:wght@300&display=swap');
-
+@media (min-width: 600px){
+    
 body{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    background: #F1AE3D;
-    max-width: 100vw;
-}
-main{
-    max-width: 100vw;
-    max-width: 100%;
+    padding-bottom: 52%;
 }
 
-#logo{
-    padding: 2% 5% 0;
-}
-#logo h1{
-    font-family: 'Roboto Slab', serif;
-    color: #29271B;
-    letter-spacing: 1px;
-    font-size: xx-large;
-    font-weight: 400;
-}
-
-
-#subtitulo{
-    padding-left: 60%;
-    margin-top: -1%;
-}
-#subtitulo h2{
-    font-family: 'Roboto Slab', serif;
-    color: #29271B;
-    font-size: small;
-    font-weight: 400;
-}
-
-header{
-    background-color: #F5F2E1;
-    max-width: 100%;
-}
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: space-around;
-    width: 80%;
-    margin: 0 10% 0;
-    position: -webkit-sticky;
-    top: 0;
-    color: #548593;
-    font-weight: 300;
-}
-nav a{
-    color: #548593;
-}
-
-main{
-    font-family: 'Quicksand', sans-serif;
-}
-
-#con-bio{
-    padding: 1% 2% 1%;
-    width: 94%;
-    margin: 1% 3% 1%;
-    border: 1px solid #548593;
-    border-radius: 1%;
-    background: rgba(84,133,147, 0.4);
-    text-align: justify;
-}
-
-
-    /*Cards dos livros*/
 #con-intro{
     width: 60%;
     text-align: center;
-    margin: 40% 20% 0;
+    margin: 50% 20% 0;
     position: absolute;
 }
 #con-intro h2{
     font-family: 'Kalam', cursive;
     font-weight: 700;
-    font-size: 3em;
+    font-size: 4.5em;
     color: #29271B;
 }
 
 #livros{
     max-width: 100%;
-    overflow-y: hidden;
-    background: linear-gradient(rgba(241,174,61,1) 0%, rgba(140,79,212,1) 43%, rgba(241,174,61,1) 100%);
-    height: 480px;
+    overflow-x: hidden;
+    background: linear-gradient(rgba(241,174,61,1) 0%, rgba(140,79,212,1) 65%, rgba(241,174,61,1) 100%);
     color: #29271B;
+    display: inline-block;
+    height: fit-content;
+    padding-bottom: 300px;
 }
 
 #titulo-livro-esquerda{
@@ -96,23 +32,24 @@ main{
     height: 100%;
     display: flex;
     align-items: center;
+    margin-left: -33%;
 }
 #titulo-livro-esquerda h3{
     -webkit-transform: rotate(90deg);
-    font-size: 2em;
+    font-size: 3.5em;
     font-weight: bold;
 }
 #texto-livro-esquerda{
     grid-area: textoEsq;
-    margin-right: -15%;
     width: 95%;
 }
 #texto-livro-esquerda p{
     text-align: left;
+    font-size: 1.4em;
 }
 #livro-esquerda{
     display: grid;
-    grid-template-columns: 10% 65% 1fr;
+    grid-template-columns: 10% 80% 1fr;
     grid-auto-rows: 100%;
     
     grid-template-areas:
@@ -120,10 +57,10 @@ main{
     
     border: 2px solid red;
     border-radius: 5%;
-    position: absolute;
+    position: relative;
     padding-top: 3%;
     width: 80%;
-    height: 72%;
+    height: 450px;
     
     background-image: linear-gradient(to left, rgba(138, 45, 45,1), rgba(234, 221, 212,1));
 }
@@ -153,35 +90,35 @@ main{
 }
 #titulo-livro-direita h3{
     -webkit-transform: rotate(-90deg);
-    font-size: 2em;
+    font-size: 3.5em;
     font-weight: bold;
     margin-left: -35%;
 }
 
 #texto-livro-direita{
     grid-area: textoDir;
-    
+    font-size: 1.2em;
+    width: 100%;
+    margin-left: 5%;
 }
 #texto-livro-direita p{
     text-align: right;
-    width: 95%;
-    margin-left: -40%;
 }
 
 #livro-direita{
     display: grid;
-    grid-template-columns: 1fr 85%;
+    grid-template-columns: 1fr 95%;
     grid-template-areas:
     'tituloDir textoDir';
     
     border: 2px solid red;
     border-radius: 5%;
     position: absolute;
-    right: -85%;
+    right: -90%;
     padding-top: 3%;
     padding-right: 15%;
     width: 82%;
-    height: 72%;
+    height: 450px;
     
     background-image: linear-gradient(to right, rgba(66, 184, 61, 1), rgba(255, 255, 255,1));
 }
@@ -200,35 +137,55 @@ main{
 }
 
 
+#con-bio{
+    font-size: 1.2em;
+}
 
-#carrossel{
-    width: 90%;
-    margin: 25% 5% 3%; 
+#logo h1{
+    font-family: 'Roboto Slab', serif;
+    color: #29271B;
+    letter-spacing: 1px;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+
+#subtitulo{
+    padding-left: 45%;
+    margin-top: -1%;
+}
+#subtitulo h2{
+    font-family: 'Roboto Slab', serif;
+    color: #29271B;
+    font-size: 1.4em;
+    font-weight: 400;
 }
 
 footer{
     position: relative;
     bottom: 0;
-    height: 50px;
     background-color: #F5F2E1;
+    padding: 4%;
 }
 
 #con-footer{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    padding: 5%;    
+    font-size: 1.8em;
 }
 #con-footer img{
-    width: 25px;
+    width: 50px;
     float: left;
 }
 
 #con-footer a{
     text-decoration: none;
     position: absolute;
-    bottom: 0;
 }
 
 .contato{
     margin-right: 30%;
+    
+}
 }
