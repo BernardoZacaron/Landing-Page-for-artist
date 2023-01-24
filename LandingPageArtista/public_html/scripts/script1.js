@@ -27,7 +27,7 @@ function direita(){
     } 
 }
 
-window.onload=function(){
+(function(){
     livroEsquerda.onclick = function (){
         esquerda();
     };
@@ -35,4 +35,4 @@ window.onload=function(){
     livroDireita.onclick = function (){
         direita();
     };
-};
+})();
