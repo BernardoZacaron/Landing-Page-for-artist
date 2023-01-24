@@ -1,3 +1,5 @@
+(function(){
+
 const livroEsquerda = document.getElementById('livro-esquerda');
 const livroDireita = document.getElementById('livro-direita');
 
@@ -27,7 +29,7 @@ function direita(){
     } 
 }
 
-(function(){
+window.onload=function(){
     livroEsquerda.onclick = function (){
         esquerda();
     };
@@ -35,4 +37,6 @@ function direita(){
     livroDireita.onclick = function (){
         direita();
     };
+};
+
 })();
