@@ -1,5 +1,4 @@
 (function(){
-
 const livroEsquerda = document.getElementById('livro-esquerda');
 const livroDireita = document.getElementById('livro-direita');
 
@@ -38,5 +37,4 @@ window.onload=function(){
         direita();
     };
 };
-
 })();
